@@ -5,8 +5,8 @@ use yew::{html, Component, Html, InputEvent};
 use crate::models;
 
 pub struct App {
-    pub sudoku: models::sudoku::Sudoku,
-    pub visible_incorrect_fields: Vec<(usize, usize)>,
+    sudoku: models::sudoku::Sudoku,
+    visible_incorrect_fields: Vec<(usize, usize)>,
 }
 
 pub enum Msg {
