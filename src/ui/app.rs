@@ -165,6 +165,9 @@ impl App {
         if let Some(index) = index {
             self.visible_incorrect_fields.remove(index);
         }
+        if self.sudoku.has_won() {
+            self.alert("Congratulations! You have won!");
+        }
     }
 
     fn alert(&self, message: &str) {
