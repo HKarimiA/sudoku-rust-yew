@@ -36,7 +36,7 @@ impl Component for App {
             </head>
             <body>
               <div class="container">
-                {Self::get_sudoku_table(&self, ctx)}
+                {Self::get_sudoku_table(self, ctx)}
                 <div class="button-container">
                   <button onclick={ctx.link().callback(|_| Msg::OnNew) } >{"New"}</button>
                   <button onclick={ctx.link().callback(|_| Msg::OnNextStep) } >{"Next step"}</button>
